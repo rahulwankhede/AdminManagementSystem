@@ -10,22 +10,31 @@ import EditUser from "./users/EditUser";
 import ViewUser from "./users/ViewUser";
 import Login from "./Login";
 import WorkSpace from "./WorkSpace";
+import CustomerDetails from "./CustomerDetails";
+import AddBranch from "./AddBranch";
+import Account from "./Account";
 function App() {
   return (
     <div className="App">
       <Router>
-      <Header/>
+
+ 
+<Header/>
         <Routes>
-        <Route exact path="/" element={<LandingPage/>} />
+
+           <Route exact path="/" element={<LandingPage/>} />
           <Route exact path="/login" element={<Login/>} />
+          <Route exact path="/account" element={<Account/>}/>
+          <Route exact path="/branch" element={<AddBranch/>}/>
           <Route exact path="/workspace" element={<WorkSpace/>}/>
           <Route exact path="/showCustomer" element={<Home/>}/>
-          <Route exact path="/adduser" element={<AddUser />} />
+          <Route exact path="/adduser" element={<CustomerDetails/>} />
           <Route exact path="/edituser/:id" element={<EditUser />} />
           <Route exact path="/viewuser/:id" element={<ViewUser />} />
         </Routes>
-      <Footer/>
+    
       </Router>
+      <Footer/>
     </div>
   );
 }
