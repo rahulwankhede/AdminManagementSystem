@@ -20,7 +20,9 @@ export default function AddBranch()
   
     const onSubmit = async (e) => {
       e.preventDefault();
+      console.log(branchName,branchAddress);
       await axios.post("http://localhost:9193/addBranch",branchDetails );
+      console.log(branchName,branchAddress);
       navigate("/workspace");
   
     };

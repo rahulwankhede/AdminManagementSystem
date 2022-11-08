@@ -1,8 +1,9 @@
-import React, { Component,useState } from 'react'
+import React, { Component,useState } from 'react';
 import axios from "axios";
 import { Link, useParams ,useNavigate} from "react-router-dom";
 export default function Account()
 {
+    
     let navigate = useNavigate();
 
     const [account, setUser] = useState({
@@ -20,8 +21,13 @@ export default function Account()
   
     const onSubmit = async (e) => {
       e.preventDefault();
-      await axios.post("http://localhost:9193/addAccount",account );
-      navigate("/workspace");
+      console.log("in");
+      const result= await axios.get("http://localhost:9193/getAccounts");
+      console.log(result.data);
+      console.log("out");
+      
+    //   await axios.post("http://localhost:9193/addAccount",account );
+    //   navigate("/workspace");
   
     };
     return(
@@ -52,8 +58,8 @@ export default function Account()
                 <input
                   type={"text"}
                   className="form-control"
-                  placeholder="Balance"
-                  name="Balance"
+                  placeholder="balance"
+                  name="balance"
                   value={balance}
                   onChange={(e) => onInputChange(e)}
                 />

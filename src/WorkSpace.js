@@ -4,7 +4,7 @@ export default class WorkSpace extends Component {
   render() {
     return (
         
-        <div className="container">
+        <div className="centre-div">
         <div className="row">
           <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
 
