@@ -14,8 +14,9 @@ function App() {
       <Router>
         <Navbar />
         // Hello i am robo
+        <CustomerDetails/>
         <Routes>
-          <Route exact path="/" element={<Login/>} />
+          <Route exact path="/login" element={<Login/>} />
           <Route exact path="/workspace" element={<WorkSpace/>}/>
           <Route exact path="/showCustomer" element={<Home/>}/>
           <Route exact path="/adduser" element={<AddUser />} />
