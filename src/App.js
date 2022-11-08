@@ -10,6 +10,7 @@ import Login from "./Login";
 import WorkSpace from "./WorkSpace";
 import CustomerDetails from "./CustomerDetails";
 import AddBranch from "./AddBranch";
+import Account from "./Account";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
        
         <Routes>
           <Route exact path="/" element={<Login/>} />
+          <Route exact path="/account" element={<Account/>}/>
           <Route exact path="/branch" element={<AddBranch/>}/>
           <Route exact path="/workspace" element={<WorkSpace/>}/>
           <Route exact path="/showCustomer" element={<Home/>}/>

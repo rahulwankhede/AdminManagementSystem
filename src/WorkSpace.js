@@ -14,7 +14,7 @@ export default class WorkSpace extends Component {
                  <Link to="/adduser" class="btn btn-primary" type="button" >Add Customer</Link>
              
                  <Link to="/branch" class="btn btn-primary" type="button" >Add Branch</Link>
-              
+                 <Link to="/account" class="btn btn-primary" type="button" >Account Details</Link>
               </div>
             </div></div></div>
     //     <div class="d-grid gap-2">

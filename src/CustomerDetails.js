@@ -97,7 +97,10 @@ export default function CustomerDetails()
                 </button>
                
     
-    
+                <Link className="btn btn-outline-danger mx-2" to="/workspace">
+              Cancel
+            </Link>
+
     
               </form>
             </div>
