@@ -7,7 +7,10 @@ import org.springframework.stereotype.Service;
 
 import com.wellsfargo.training.ams.model.Branch;
 import com.wellsfargo.training.ams.repository.BranchRepository;
-
+/***
+ *A service class for Branch table that has an object of the Branch repository class and
+ *uses JPA methods to implement functionalities. 
+ */
 @Service
 public class BranchService {	
 	@Autowired

@@ -8,7 +8,12 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
-
+/**
+ * 
+ * Account Table, has Account No, Customer No, Balance, Branch Id and Opening Date, the Account No 
+ * is a generated using Sequence generator, Customer No and Branch Id for the table are foreign keys.
+ * This Class creates an object of account type in many to one relationship with Customers and Branch.
+ */
 
 @Entity
 @Table(name = "Account")

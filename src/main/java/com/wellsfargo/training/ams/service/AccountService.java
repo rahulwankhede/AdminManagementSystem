@@ -11,7 +11,11 @@ import com.wellsfargo.training.ams.model.Branch;
 import com.wellsfargo.training.ams.model.Customer;
 import com.wellsfargo.training.ams.model.FetchObjects;
 import com.wellsfargo.training.ams.repository.AccountRepository;
-
+/***
+ *A service class for Account table that has an object of the Account repository class and
+ *uses JPA methods to implement functionalities. 
+ *
+ */
 @Service
 public class AccountService {
 	@Autowired

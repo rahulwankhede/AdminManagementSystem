@@ -13,7 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.wellsfargo.training.ams.model.Customer;
 import com.wellsfargo.training.ams.service.CustomerService;
-
+/***
+ *Contains all the REST methods related to Customer- used to map and handle all the
+ *HTTP requests from the client
+ */
 @RestController
 public class CustomerController {
 	@Autowired

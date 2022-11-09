@@ -13,7 +13,11 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
+/***
+ * Creates an Object of type Branch that has Id which is generated using Sequence Generator, branchName
+ * and branchAddress is inputed in the front-end and the created object is stored in Branch Table 
+ *
+ */
 @Entity
 @Table(name="Branch")
 public class Branch {
@@ -27,6 +31,20 @@ public class Branch {
 	public Branch() {
 	}
 	
+	public Branch(String branchName, String branchAddress) {
+		super();
+		this.branchName = branchName;
+		this.branchAddress = branchAddress;
+	}
+
+	
+	public Branch(int id, String branchName, String branchAddress) {
+		super();
+		this.id = id;
+		this.branchName = branchName;
+		this.branchAddress = branchAddress;
+	}
+
 	public Branch(int id, String branchName, String branchAddress, List<Account> accounts) {
 		this.id = id;
 		this.branchName = branchName;
