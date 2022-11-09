@@ -7,9 +7,11 @@ export default function Account()
     let navigate = useNavigate();
 
     const [account, setUser] = useState({
-      balance:"",
       
+      balance:"",
+
    openingDate: ""
+
      
     });
   
@@ -22,12 +24,28 @@ export default function Account()
     const onSubmit = async (e) => {
       e.preventDefault();
       console.log("in");
-      const result= await axios.get("http://localhost:9193/getAccounts");
-      console.log(result.data);
-      console.log("out");
+      const result1= await axios.get("http://localhost:9193/getCustomers");
       
-    //   await axios.post("http://localhost:9193/addAccount",account );
-    //   navigate("/workspace");
+        const res1=result1.data;
+         const id1=res1.map(r=>r.id);
+         const val1=id1[id1.length-1];
+         const result2= await axios.get("http://localhost:9193/getBranches");
+         
+         const res2=result2.data;
+          const id2=res2.map(r=>r.id);
+     const val2=id2[id2.length-1];
+      console.log(id1,id2);
+      
+      
+   await axios.post("http://localhost:9193/addAccount",{
+        "customer_id":val1,
+        "balance":`${account.balance}`,
+        "branch_id":val2,
+        "openingDate":`${account.openingDate}`
+      } );
+    console.log(val1,val2,balance,openingDate);
+      console.log("out");
+      navigate("/workspace");
   
     };
     return(

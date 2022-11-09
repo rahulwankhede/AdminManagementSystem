@@ -13,6 +13,8 @@ import WorkSpace from "./WorkSpace";
 import CustomerDetails from "./CustomerDetails";
 import AddBranch from "./AddBranch";
 import Account from "./Account";
+import ShowCustomer from "./ShowCustomer";
+import Det from "./Det";
 function App() {
   return (
     <div className="App">
@@ -21,13 +23,13 @@ function App() {
  
 <Header/>
         <Routes>
-
+<Route exact path="/pop" element={<Det/>}/>
            <Route exact path="/" element={<LandingPage/>} />
           <Route exact path="/login" element={<Login/>} />
           <Route exact path="/account" element={<Account/>}/>
           <Route exact path="/branch" element={<AddBranch/>}/>
           <Route exact path="/workspace" element={<WorkSpace/>}/>
-          <Route exact path="/showCustomer" element={<Home/>}/>
+          <Route exact path="/showCustomer" element={<ShowCustomer/>}/>
           <Route exact path="/adduser" element={<CustomerDetails/>} />
           <Route exact path="/edituser/:id" element={<EditUser />} />
           <Route exact path="/viewuser/:id" element={<ViewUser />} />
