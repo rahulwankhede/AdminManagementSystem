@@ -4,17 +4,17 @@ export default class WorkSpace extends Component {
   render() {
     return (
         
-        <div className="container">
+        <div className="container " >
         <div className="row">
-          <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
+          <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow py-5 bg-purple-400" >
 
-              <div class="d-grid gap-2">
+              <div class="d-grid gap-5 " >
             
-                 <Link to="/showCustomer" class="btn btn-primary" type="button" >Show Customer</Link>
-                 <Link to="/adduser" class="btn btn-primary" type="button" >Add Customer</Link>
+                 <Link to="/showCustomer" class="btn btn-primary btn-lg" type="button" >Show Customer</Link>
+                 <Link to="/adduser" class="btn btn-primary btn-lg"  type="button" >Add Customer</Link>
              
-                 <Link to="/branch" class="btn btn-primary" type="button" >Add Branch</Link>
-                 <Link to="/account" class="btn btn-primary" type="button" >Account</Link>
+                 <Link to="/branch" class="btn btn-primary btn-lg" type="button" >Add Branch</Link>
+                 <Link to="/account" class="btn btn-primary btn-lg" type="button" >Account</Link>
               </div>
             </div></div></div>
     //     <div class="d-grid gap-2">

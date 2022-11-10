@@ -26,7 +26,7 @@ const [success,setSuccess]=useState(false);
     
     console.log(user,pwd); 
 
-    if(user=="aravindh2000"&&pwd==12345)
+    if(user=="admin001"&&pwd==12345)
     {
       setUser('');
       setPwd('');
