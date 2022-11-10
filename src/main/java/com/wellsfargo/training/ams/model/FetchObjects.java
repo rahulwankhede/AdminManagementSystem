@@ -1,5 +1,9 @@
 package com.wellsfargo.training.ams.model;
-
+/***
+ *Class FetchObjects creates an object of type that is used by the admin to enter details while
+ *creating an account.   
+ *
+ */
 public class FetchObjects {
 	int customer_id;
 	int branch_id;

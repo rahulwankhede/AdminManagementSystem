@@ -12,7 +12,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import com.wellsfargo.training.ams.model.Branch;
 import com.wellsfargo.training.ams.service.BranchService;
-
+/***
+ *Contains all the REST methods related to Branch - used to map and handle all the
+ *HTTP requests from the client 
+ */
 @RestController
 public class BranchController {
 	@Autowired
